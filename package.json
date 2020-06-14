@@ -1,0 +1,50 @@
+{
+  "name": "app_id_updater",
+  "description": "Simple app id updater",
+  "version": "0.0.0",
+  "author": "Mohammadreza Ghorbani",
+  "bin": {
+    "app_id_updater": "./bin/run"
+  },
+  "bugs": "https://github.com/reza-fs/app_id_updater/issues",
+  "dependencies": {
+    "@deriv/deriv-api": "^1.0.6",
+    "@oclif/command": "^1.6.1",
+    "@oclif/config": "^1.15.1",
+    "@oclif/plugin-help": "^3.1.0",
+    "cli-ux": "^5.4.6",
+    "inquirer": "^7.1.0",
+    "ws": "^7.3.0"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.22.2",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-oclif": "^3.1.0",
+    "eslint-plugin-import": "^2.21.2"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/src"
+  ],
+  "homepage": "https://github.com/easteregg/app_id_updater",
+  "keywords": [
+    "oclif",
+    "deriv developer-tools"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "bin": "app_id_updater"
+  },
+  "repository": "reza-fs/app_id_updater",
+  "scripts": {
+    "posttest": "eslint .",
+    "prepack": "oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}
